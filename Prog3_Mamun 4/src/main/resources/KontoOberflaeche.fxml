@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="bankprojekt.oberflaeche.KontoOberflaeche"
+            stylesheets="@Styles.Css">
+    <top>
+        <Text fx:id="ueberschrift" text="Ein Konto verändern" styleClass="header"/>
+    </top>
+    <center>
+        <GridPane fx:id="anzeige" alignment="CENTER" hgap="10" vgap="10" padding="20">
+            <Text text="Kontonummer:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="label"/>
+            <Text fx:id="nummer" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="value"/>
+
+            <Text text="Kontostand:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="label"/>
+            <Text fx:id="stand" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="value"/>
+
+            <Text text="Gesperrt:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="label"/>
+            <CheckBox fx:id="gesperrt" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Text text="Adresse:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="label"/>
+            <TextArea fx:id="adresse" GridPane.rowIndex="3" GridPane.columnIndex="1" prefColumnCount="25"
+                      prefRowCount="2"/>
+
+            <Text fx:id="meldung" text="Willkommen lieber Benutzer" GridPane.rowIndex="4" GridPane.columnIndex="0"
+                  GridPane.columnSpan="2" styleClass="message"/>
+            <stylesheets>
+                <URL value="@Styles.Css"/>
+            </stylesheets>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <TextField fx:id="betrag" text="100.00"/>
+            <Button fx:id="einzahlen" text="Einzahlen"/>
+            <Button fx:id="abheben" text="Abheben"/>
+        </HBox>
+    </bottom>
+</BorderPane>

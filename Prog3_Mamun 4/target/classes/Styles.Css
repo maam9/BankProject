@@ -1,0 +1,24 @@
+
+.header {
+    -fx-font-size: 25000px;
+    -fx-font-family: "Sans Serif";
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 155px;
+    -fx-font-family: "Sans Serif";
+        -fx-background-radius: 15;
+
+}
+
+.value {
+    -fx-font-size: 19px;
+    -fx-font-family: "Sans Serif";
+}
+
+.message {
+    -fx-font-size: 15px;
+    -fx-font-family: "Sans Serif";
+    -fx-text-fill: red;
+}
